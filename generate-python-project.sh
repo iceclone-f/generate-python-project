@@ -33,19 +33,19 @@ echo "Python environment is being generated. Please stand by..."
 python3 -m venv ${venv} 
 
 # 5. Create the project directory
-mkdir ${venv}/${project_name}
+mkdir ${project_name}
 
 # 6. Create the default package directory
-mkdir ${venv}/${project_name}/${default_package}
+mkdir ${project_name}/${default_package}
 
 # 7. create the default files and directories
-touch ${venv}/${project_name}/"LICENSE"
-touch ${venv}/${project_name}/"README.md"
-touch ${venv}/${project_name}/"pyproject.toml"
-touch ${venv}/${project_name}/"requirements.txt"
-touch ${venv}/${project_name}/${default_package}/"__init__.py"
-mkdir ${venv}/${project_name}/${default_package}/"src"
-mkdir ${venv}/${project_name}/${default_package}/"tests"
+touch ${project_name}/"LICENSE"
+touch ${project_name}/"README.md"
+touch ${project_name}/"pyproject.toml"
+touch ${project_name}/"requirements.txt"
+touch ${project_name}/${default_package}/"__init__.py"
+mkdir ${project_name}/${default_package}/"src"
+mkdir ${project_name}/${default_package}/"tests"
 
 echo "Your Python environment is done!"
 echo "To activate the environment run: source ${venv}/bin/activate"
